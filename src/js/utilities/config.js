@@ -15,7 +15,8 @@ function config($stateProvider, $urlRouterProvider){
   })
   .state("layout.portfolio", {
     url: "/portfolio",
-    templateUrl: "templates/portfolio.tpl.html"
+    templateUrl: "templates/portfolio.tpl.html",
+    controller: "PortfolioController as vm"
   })
   .state("layout.contact", {
     url: "/contact",
