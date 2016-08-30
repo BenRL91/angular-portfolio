@@ -1,0 +1,14 @@
+.about-container {
+  section.info {
+    background-color: #fce473;
+    .card {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      img.my-photo {
+        max-width: 100%;
+        width: 600px;
+      }
+    }
+  }
+}

@@ -9,6 +9,18 @@ function config($stateProvider, $urlRouterProvider){
     url: "/",
     templateUrl: "templates/home.tpl.html"
   })
+  .state("layout.about", {
+    url: "/about",
+    templateUrl: "templates/about.tpl.html"
+  })
+  .state("layout.portfolio", {
+    url: "/portfolio",
+    templateUrl: "templates/portfolio.tpl.html"
+  })
+  .state("layout.contact", {
+    url: "/contact",
+    templateUrl: "templates/contact.tpl.html"
+  })
 
   $urlRouterProvider.otherwise("/")
 }

@@ -1,0 +1,14 @@
+@import "font-awesome";
+@import "_variables";
+@import "_layout";
+@import "_home";
+@import "_about";
+@import "_portfolio";
+@import "_contact";
+@import "bulma";
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}

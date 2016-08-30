@@ -1,0 +1,19 @@
+@mixin FLEXED( $dir, $hor, $vert){
+
+  display: flex;
+  flex-direction:  $dir;
+  justify-content: $hor;
+  align-items:     $vert;
+  align-content:   $vert;
+
+}
+
+@mixin ABSOLUTELY( $top, $right, $bottom, $left ){
+
+  position: absolute;
+  top:    $top;
+  right:  $right;
+  bottom: $bottom;
+  left:   $left;
+
+}
