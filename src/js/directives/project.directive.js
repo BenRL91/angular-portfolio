@@ -14,7 +14,6 @@ function portfolioProject(){
     replace: true,
     templateUrl: "templates/project.tpl.html",
     link: function ( scope, element, attrs ){
-      console.log(attrs)
       scope.image = attrs.image
       scope.alt = attrs.alt
       scope.name = attrs.name

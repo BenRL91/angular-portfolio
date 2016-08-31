@@ -1,9 +1,13 @@
 .about-container {
   section.info {
+    background-color: #F9E600;
     .card {
       width: 100%;
       max-width: 650px;
       margin: 0 auto;
+      .title , .subtitle {
+        color: black;
+      }
       img.my-photo {
         max-width: 100%;
         width: 600px;

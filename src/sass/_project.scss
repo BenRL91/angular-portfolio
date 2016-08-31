@@ -1,1 +1,13 @@
-
+.project-container {
+  .modal.is-active {
+    cursor: default;
+    .modal-card {
+        height: 90vh;
+        width: 90vw;
+        overflow: hidden;
+      .modal-card-head {
+        background-color: $red;
+      }
+    }
+  }
+}

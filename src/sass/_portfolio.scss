@@ -1,26 +1,56 @@
 .portfolio-container {
   .hero-body {
+    background-color: $red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   .project-container, .card {
+    cursor: default;
+    .project-overlay {
+      transition: opacity .2s linear;
+      background: $darkTransparent;
+      z-index: 999;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: white;
+        font-size: 3em;
+      }
+    }
+    .project {
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        .project-overlay {
+          transition: opacity .2s linear;
+          opacity: 1;
+        }
+      }
+    }
     min-width: 400px;
     max-width: 625px;
     margin: 20px 0px;
     p.title {
       font-size: 2em;
-      color: #69707A;
+      color: $grey;
     }
     p.subtitle {
       font-size: 1.2em;
-      color: #69707A;
+      color: $grey;
     }
     a {
-      color: #69707A;
+      transition: color .3s linear;
+      color: $grey;
       &:hover {
+        transition: color .3s linear;
         color: black;
       }
+    }
+    .icon {
+      margin-right: 20px;
     }
   }
   @media screen and (max-width: 650px){
