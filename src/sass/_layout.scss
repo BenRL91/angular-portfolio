@@ -1,2 +1,13 @@
 .layout-container {
+  .icon {
+    font-size: 2em;
+    margin-right: 20px;
+  }
+  .nav-item:hover{
+    .hide {
+      transition: all .3s linear;
+      height: 20px;
+      opacity: 1;
+    }
+  }
 }

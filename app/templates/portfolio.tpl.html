@@ -1,4 +1,15 @@
-<div class="portfolio-container">
-  <portfolio-project modal-title="one"></portfolio-project>
-  <portfolio-project modal-title="two"></portfolio-project>
+<div class="portfolio-container hero is-danger">
+  <div class="hero-body">
+    <portfolio-project
+      ng-repeat="project in vm.projects"
+      name={{project.name}}
+      alt={{project.alt}}
+      image={{project.image}}
+      demo={{project.demo}}
+      github={{project.github}}
+      modal-title={{project.modalTitle}}
+      role={{project.role}}
+      description={{project.description}}>
+    </portfolio-project>
+</div>
 </div>

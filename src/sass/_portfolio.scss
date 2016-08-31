@@ -1,8 +1,32 @@
 .portfolio-container {
-  .card {
-    max-width: 33.3%;
-    header p {
-      margin: 5px 0px;
+  .hero-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .project-container, .card {
+    min-width: 400px;
+    max-width: 625px;
+    margin: 20px 0px;
+    p.title {
+      font-size: 2em;
+      color: #69707A;
+    }
+    p.subtitle {
+      font-size: 1.2em;
+      color: #69707A;
+    }
+    a {
+      color: #69707A;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  @media screen and (max-width: 650px){
+    .project-container, .card {
+      min-width: 400px;
+      max-width: 625px;
     }
   }
 }

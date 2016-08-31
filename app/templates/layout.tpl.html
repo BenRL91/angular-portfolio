@@ -8,24 +8,38 @@
       <span class="icon">
         <i class="fa fa-github"></i>
       </span>
+      <span class="subtitle hide is-hidden-touch">
+        http://github.com/BenRL91
+      </span>
     </a>
     <a class="nav-item" href="https://www.twitter.com/benlee_eelned">
       <span class="icon">
-        <i class="fa fa-twitter"></i>
+        <i class="fa fa-envelope-o"></i>
+      </span>
+      <span class="subtitle hide is-hidden-touch">
+        benlee.eelned@gmail.com
       </span>
     </a>
     <a class="nav-item" href="#">
       <span class="icon">
         <i class="fa fa-mobile"></i>
       </span>
+      <span class="subtitle hide is-hidden-touch">
+        862-432-6657
+      </span>
     </a>
   </div>
-    <span class="nav-toggle">
+    <span class="nav-toggle" ng-click="vm.showMenu()" ng-hide="vm.menuStatus">
        <span></span>
        <span></span>
        <span></span>
      </span>
-
+     <div class="menu" ng-show="vm.menuStatus">
+       <div class="menu-item">
+         <span>Hello</span>
+         <span ng-click="vm.hideMenu()">Close</span>
+       </div>
+     </div>
      <div class="nav-right nav-menu">
        <a class="nav-item" href="/#/">
          Home
@@ -35,9 +49,6 @@
        </a>
        <a class="nav-item" href="/#/portfolio">
          Portfolio
-       </a>
-       <a class="nav-item" href="/#/contact">
-         Contact
        </a>
        <span class="nav-item">
          <a class="button is-primary" href="#">

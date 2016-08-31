@@ -4,11 +4,19 @@
 @import "_home";
 @import "_about";
 @import "_portfolio";
-@import "_contact";
+@import "_project";
 @import "bulma";
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+.app-wrapper {
+  .hide {
+    transition: all .3s linear;
+    height: 0px;
+    opacity: 0;
+  }
 }

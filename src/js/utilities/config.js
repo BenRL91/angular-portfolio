@@ -18,10 +18,6 @@ function config($stateProvider, $urlRouterProvider){
     templateUrl: "templates/portfolio.tpl.html",
     controller: "PortfolioController as vm"
   })
-  .state("layout.contact", {
-    url: "/contact",
-    templateUrl: "templates/contact.tpl.html"
-  })
 
   $urlRouterProvider.otherwise("/")
 }
