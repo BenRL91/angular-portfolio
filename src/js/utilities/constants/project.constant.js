@@ -1,23 +1,25 @@
 const PROJECTS = {
   my: [
       {
-      image: "http://fillmurray.com/500/500",
+      image: "/images/lifteri-main.png",
       alt: "bill murray",
       name: "Lifteri",
-      demo: "http://google.com",
-      github: "http://github.com",
-      description: "lorem ipsum dolor sit amet",
+      demo: "http://lifteri.surge.sh/#/",
+      github: "https://github.com/hitch-hiking-app/",
+      description: "Get where you want to go for less.",
       modalTitle: "one",
+      modalImg: "/images/lifteri-modalImg.jpg",
       role: "Front End Functionality and Styling"
     },
     {
-      image: "http://fillmurray.com/400/400",
+      image: "/images/myGarden-main.png",
       alt: "bill murray",
       name: "myGarden",
-      demo: "http://google.com",
-      github: "http://github.com",
-      description: "lorem ipsum dolor sit amet",
+      demo: "http://my-garden.surge.sh/",
+      github: "https://github.com/FinalProject-Garden/",
+      description: "Grow your own way.",
       modalTitle: "two",
+      modalImg: "/images/myGarden-modalImg.jpg",
       role: "Consultant, Front End Functionality and Styling"
     },
     {
@@ -43,9 +45,9 @@ const PROJECTS = {
     {
       image: "http://placecage.com/400/400",
       alt: "bill murray",
-      name: "Murrica",
-      demo: "http://google.com",
-      github: "http://github.com",
+      name: "Blog Rolling",
+      demo: "http://blog-rolling.surge.sh/#/",
+      github: "https://github.com/BenRL91/great-blog/",
       description: "lorem ipsum dolor sit amet",
       modalTitle: "four",
       role: "Solo Project"

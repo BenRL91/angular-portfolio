@@ -9,6 +9,7 @@ function portfolioProject(){
       github: "@",
       description: "@",
       modalTitle: "@",
+      modalImg: "@",
       role: "@"
     },
     replace: true,
@@ -21,6 +22,7 @@ function portfolioProject(){
       scope.github = attrs.github
       scope.description = attrs.description
       scope.modalTitle = attrs.modalTitle
+      scope.modalImg = attrs.modalImg
       scope.role = attrs.role
     },
     controller: function ($scope) {
