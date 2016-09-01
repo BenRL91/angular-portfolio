@@ -1,5 +1,6 @@
 <div class="project-container">
-  <div class="card">
+  <div class="pop-container">
+    <div class="card">
       <div class="card-image project">
         <div class="project-overlay is-overlay has-text-centered" ng-click="activateModal()"></div>
         <figure class="image is-16by9">
@@ -9,7 +10,7 @@
       <header class="card-header">
       <div class="media-content">
         <p class="title is-5 has-text-centered">{{ name }}</p>
-        <p class="subtitle is-6 has-text-centered">{{ role }}</p>
+        <p class="subtitle is-6 has-text-centered"> {{role.length > 9 ? "Project Roles:" : "Project Role:"}} {{ role }}</p>
       </div>
     </header>
       <div class="card-content">
@@ -31,6 +32,7 @@
           View Code
         </a>
       </footer>
+    </div>
   </div>
   <div class="modal" ng-class="modalActivated ? 'is-active' : ''">
   <div class="modal-background" ng-click="deactivateModal()"></div>

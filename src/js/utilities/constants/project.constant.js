@@ -9,7 +9,7 @@ const PROJECTS = {
       description: "Get where you want to go for less.",
       modalTitle: "one",
       modalImg: "/images/lifteri-modalImg.jpg",
-      role: "Front End Functionality and Styling"
+      role: "Front End"
     },
     {
       image: "/images/myGarden-main.png",
@@ -20,7 +20,7 @@ const PROJECTS = {
       description: "Grow your own way.",
       modalTitle: "two",
       modalImg: "/images/myGarden-modalImg.jpg",
-      role: "Consultant, Front End Functionality and Styling"
+      role: "Consultant, Front End"
     },
     {
       image: "http://placekitten.com/400/400",
@@ -30,7 +30,7 @@ const PROJECTS = {
       github: "http://github.com",
       description: "lorem ipsum dolor sit amet",
       modalTitle: "three",
-      role: "Solo Project"
+      role: "Front End and Back End"
     },
     {
       image: "http://placecage.com/400/400",
@@ -40,7 +40,7 @@ const PROJECTS = {
       github: "http://github.com",
       description: "lorem ipsum dolor sit amet",
       modalTitle: "four",
-      role: "Solo Project"
+      role: "Front End and Back End"
     },
     {
       image: "http://placecage.com/400/400",
@@ -50,7 +50,7 @@ const PROJECTS = {
       github: "https://github.com/BenRL91/great-blog/",
       description: "lorem ipsum dolor sit amet",
       modalTitle: "four",
-      role: "Solo Project"
+      role: "Front End and Back End"
     },
     {
       image: "http://placecage.com/400/400",
@@ -60,7 +60,7 @@ const PROJECTS = {
       github: "http://github.com",
       description: "lorem ipsum dolor sit amet",
       modalTitle: "four",
-      role: "Solo Project"
+      role: "Front End and Back End"
     }
   ]
 }
