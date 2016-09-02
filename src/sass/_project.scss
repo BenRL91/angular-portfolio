@@ -8,8 +8,15 @@
         height: 90vh;
         width: 90vw;
         overflow: hidden;
+        img {
+          min-height: 300px;
+          max-width: 400px;
+        }
       .modal-card-head {
         background-color: $red;
+      }
+      .modal-card-title {
+        color: white;
       }
       .modal-card-body {
         @include FLEXED(row, space-around, center);
@@ -22,6 +29,7 @@
         height: 300px;
         margin: 0px;
         padding: 20px;
+        @include FLEXED(row, center, center);
       }
     }
   }

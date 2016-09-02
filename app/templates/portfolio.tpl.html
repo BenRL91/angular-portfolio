@@ -1,4 +1,7 @@
 <div class="portfolio-container hero">
+    <h1 class="title hero has-text-centered is-success">
+      My Work
+    </h1>
     <div class="hero-body">
       <portfolio-project
         ng-repeat="project in vm.projects"
@@ -10,7 +13,8 @@
         modal-title={{project.modalTitle}}
         modal-img={{project.modalImg}}
         role={{project.role}}
-        description={{project.description}}>
+        description={{project.description}}
+        detailed-description={{project.detailedDescription}}>
       </portfolio-project>
   </div>
 </div>
