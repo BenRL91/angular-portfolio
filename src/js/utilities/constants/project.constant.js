@@ -54,7 +54,7 @@ const PROJECTS = {
       name: "YouTutor",
       demo: "/#/portfolio",
       github: "http://github.com/BenRL91/yoututor",
-      description: "Make references while watching to a YouTube video.",
+      description: "Make references while learning from a YouTube video.",
       modalTitle: "YouTutor",
       modalImg: "/images/development-in-progress.png",
       detailedDescription: "If you've ever wanted to learn something from the internet and didn't want to do extensive reading, you probably went onto YouTube and looked up a tutorial. Then you grabbed your pen and paper and when you missed a section you scrolled back and forth until you found the last spot you remember. Not anymore! With YouTutor users can add section titles for notetaking, along with timestamps for reference at the click of a button! Saving your notes, as well as multiple notes to playlists are soon to come. From training staff to reviewing last week's football game, the possibilities never end with YouTutor!",
