@@ -18,6 +18,11 @@ function config($stateProvider, $urlRouterProvider){
     templateUrl: "templates/portfolio.tpl.html",
     controller: "PortfolioController as vm"
   })
+  .state("layout.top-five", {
+  url: "/top-five",
+  templateUrl: "templates/top.five.tpl.html",
+  controller: "TopFiveController as vm"
+  })
 
   $urlRouterProvider.otherwise("/")
 }

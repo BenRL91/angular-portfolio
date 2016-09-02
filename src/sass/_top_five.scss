@@ -1,0 +1,10 @@
+.top-five-container {
+    @include FLEXED(column, center, center)
+    .tabs {
+        font-size: 3.5vmin;
+    }
+    .current-top-five{
+        @include FLEXED(column, center, flex-start);
+        font-size: 4vmin;
+    }
+}

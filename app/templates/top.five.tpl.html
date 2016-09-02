@@ -1,0 +1,28 @@
+<div class="top-five-container">
+  <div class="tabs is-centered">
+    <ul>
+      <li ng-class="vm.currentTopFiveAttr === 'skills' ? 'is-active' : ''">
+        <a ng-click="vm.showCategory('skills')">Programming Skills</a>
+      </li>
+      <li ng-class="vm.currentTopFiveAttr === 'movies' ? 'is-active' : ''">
+        <a ng-click="vm.showCategory('movies')">Movies</a>
+      </li>
+      <li ng-class="vm.currentTopFiveAttr === 'songs' ? 'is-active' : ''">
+        <a ng-click="vm.showCategory('songs')">Songs</a>
+      </li>
+       <li ng-class="vm.currentTopFiveAttr === 'games' ? 'is-active' : ''">
+        <a ng-click="vm.showCategory('games')">Video Games</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="current-top-five">
+    <li class="label-container">
+      <span>{{ vm.currentPopularAttr.toUpperCase() }}</span>
+    </li>
+
+    <li class="top-five-list-item" ng-repeat="categoryItem in vm.currentTopFive track by $index">
+        <span class="rank">{{ $index + 1 }}.</span>
+        <span class="top-five-item">{{ categoryItem }}<span>      
+    </li>
+  </ul>
+</div>

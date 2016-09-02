@@ -4,6 +4,7 @@ import { config } from "./utilities/config";
 import { PROJECTS } from "./utilities/constants/project.constant";
 import { LayoutController } from "./controllers/layout.controller";
 import { PortfolioController } from "./controllers/portfolio.controller";
+import { TopFiveController } from "./controllers/top.five.controller";
 import { portfolioProject } from "./directives/project.directive";
 
 angular
@@ -12,4 +13,5 @@ angular
   .constant("PROJECTS", PROJECTS)
   .controller("LayoutController", LayoutController)
   .controller("PortfolioController", PortfolioController)
+  .controller("TopFiveController", TopFiveController)
   .directive("portfolioProject", portfolioProject)
