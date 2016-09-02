@@ -34,11 +34,6 @@
        <span></span>
        <span></span>
      </span>
-     <div class="menu" ng-show="vm.menuStatus">
-       <div class="menu-item">
-         <span ng-click="vm.hideMenu()">Close</span>
-       </div>
-     </div>
      <div class="nav-right nav-menu">
        <a class="nav-item" href="/#/">
          Home
@@ -48,6 +43,9 @@
        </a>
        <a class="nav-item" href="/#/portfolio">
          Portfolio
+       </a>
+       <a class="nav-item one-line" href="/#/top-five">
+         My Top Fives
        </a>
        <span class="nav-item">
           <a class="button is-light" target="_self" href="/images/BenLee-Resume.pdf" download="Resume.pdf">           <span class="icon">
@@ -60,5 +58,29 @@
        </span>
      </div>
   </nav>
+  <div class="menu" ng-mouseleave="vm.hideMenu()" ng-show="vm.menuStatus">
+      <aside class="menu">
+        <p class="menu-label is-large">
+          Navigation
+        </p>
+        <ul class="menu-list">
+          <li><a href="/#/Home">Home</a></li>
+          <li><a href="/#/about">About</a></li>
+          <li><a href="/#/portfolio">Portfolio</a></li>
+          <li><a href="/#/top-five">My Top Fives</a></li>
+        </ul>
+        <p class="menu-label">
+          Contact Me
+        </p>
+        <ul class="menu-list">
+          <li>
+            <ul>
+              <li><a class="is-paddingless" href="http://www.github.com/BenRL91">Github</a></li>
+              <li>benlee.eelned@gmail.com</li>
+              <li>862-432-6657</li>
+            </ul>
+          </li>
+      </aside>
+  </div>
   <div ui-view></div>
   </div>

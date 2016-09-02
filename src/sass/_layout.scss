@@ -1,12 +1,26 @@
 .layout-container {
+  position: relative;
   .icon {
     font-size: 2em;
+  }
+  .one-line {
+    white-space: nowrap;
   }
   .nav-item:hover{
     .hide {
       transition: all .3s linear;
       height: 20px;
       opacity: 1;
+    }
+  }
+  .menu {
+    background: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    .menu-label {
+      font-size: 1.2em;
     }
   }
 }
