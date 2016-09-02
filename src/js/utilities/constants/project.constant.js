@@ -15,6 +15,7 @@ const PROJECTS = {
     {
       image: "/images/myGarden-main.png",
       alt: "myGarden application image",
+      name: "myGarden",
       demo: "http://my-garden.surge.sh/",
       github: "https://github.com/FinalProject-Garden/",
       description: "Grow your own way.",
@@ -32,7 +33,7 @@ const PROJECTS = {
       description: "A simple blog landing page.",
       modalTitle: "Blog Rolling",
       modalImg: "/images/blog-rolling-modalImg.jpg",
-      detailedDescription: "Blog Rolling is a woodsperson themed blog landing page with a couple of featurs for highlighting the most popular blogs as well as an archive for showing blogs from the past, categorized by the year they were created.",
+      detailedDescription: "Blog Rolling is a woodsperson themed blog landing page with a couple of features for highlighting the most popular blogs as well as an archive for showing blogs from the past, categorized by the year they were created.",
       role: "Front End"
     },
     {

@@ -22,13 +22,13 @@
         </div>
       </div>
       <footer class="card-footer">
-        <a class="card-footer-item" ng-href="{{demo}}">
+        <a class="card-footer-item button is-medium" ng-class="demo === '/#/portfolio' ? 'is-disabled' : ''" ng-href="{{demo}}">
           <span class="icon">
             <i class="fa fa-laptop"></i>
           </span>
           Demo
         </a>
-        <a class="card-footer-item" ng-href="{{github}}">
+        <a class="card-footer-item button is-medium" ng-href="{{github}}">
         <span class="icon">
           <i class="fa fa-code-fork"></i>
         </span>
