@@ -61,6 +61,11 @@
     .icon {
       margin-right: 20px;
     }
+    .card-footer-item {
+      &:hover {
+        border-right: solid 1px black;
+      }
+    }
   }
 }
   @media screen and (max-width: 650px){
