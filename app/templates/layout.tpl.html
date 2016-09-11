@@ -12,7 +12,7 @@
         http://github.com/BenRL91
       </span>
     </a>
-    <a class="nav-item" href="https://www.twitter.com/benlee_eelned">
+    <a class="nav-item" href="#">
       <span class="icon">
         <i class="fa fa-envelope-o"></i>
       </span>
@@ -38,13 +38,13 @@
        <a class="nav-item" href="/#/">
          Home
        </a>
-       <a class="nav-item" href="/#/about">
+       <a class="nav-item" ng-click="vm.scrollTo('about')">
          About
        </a>
-       <a class="nav-item" href="/#/portfolio">
+       <a class="nav-item" ng-click="vm.scrollTo('portfolio')">
          Portfolio
        </a>
-       <a class="nav-item one-line" href="/#/top-five">
+       <a class="nav-item one-line" ng-click="vm.scrollTo('top-five')">
          My Top Fives
        </a>
        <span class="nav-item">
@@ -65,9 +65,9 @@
         </p>
         <ul class="menu-list">
           <li><a href="/#/Home">Home</a></li>
-          <li><a href="/#/about">About</a></li>
-          <li><a href="/#/portfolio">Portfolio</a></li>
-          <li><a href="/#/top-five">My Top Fives</a></li>
+          <li><a ng-click="vm.scrollTo('about')">About</a></li>
+          <li><a ng-click="vm.scrollTo('portfolio')">Portfolio</a></li>
+          <li><a ng-click="vm.scrollTo('top-five')">My Top Fives</a></li>
         </ul>
         <p class="menu-label">
           Contact Me

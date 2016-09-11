@@ -9,3 +9,88 @@
     </div>
   </section>
 </div>
+<div class="about-container" id="about">
+    <h1 class="title hero has-text-centered">
+     About Me
+    </h1>
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="/images/bw.jpg" alt="Photo of Ben Lee">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-32x32">
+              <img src="/images/jslogo.jpg" alt="javascript logo">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-5">Benjamin Lee</p>
+            <p class="subtitle is-6">Software Engineer</p>
+          </div>
+        </div>
+        <div class="content">
+          <p>
+            Prior to code I was a blue collar worker getting by performing manual labor.
+            Realizing that no matter where I went I always tried to solve problems with my mind rather than my body, I decided to learn how to program.
+            Since acquiring this skill, which I've come to thoroughly enjoy, the tech world has become a place I want to spend my time and to which I also want to contribute my knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="portfolio-container hero" id="portfolio">
+    <h1 class="title hero has-text-centered is-success is-marginless">
+      My Work
+    </h1>
+    <div class="hero-body">
+      <portfolio-project
+        ng-repeat="project in vm.projects"
+        name={{project.name}}
+        alt={{project.alt}}
+        image={{project.image}}
+        demo={{project.demo}}
+        github={{project.github}}
+        modal-title={{project.modalTitle}}
+        modal-img={{project.modalImg}}
+        role={{project.role}}
+        description={{project.description}}
+        detailed-description={{project.detailedDescription}}>
+      </portfolio-project>
+  </div>
+</div>
+<div class="top-five-container hero" id="top-five">
+  <h1 class="title hero has-text-centered is-light is-marginless">
+    My Top Fives
+  </h1>
+  <div class="hero-body is-light">
+      <div class="tabs is-centered is-light">
+      <ul>
+        <li ng-class="vm.currentTopFiveAttr === 'skills' ? 'is-active' : ''">
+          <a ng-click="vm.showCategory('skills')">Programming Skills</a>
+        </li>
+        <li ng-class="vm.currentTopFiveAttr === 'movies' ? 'is-active' : ''">
+          <a ng-click="vm.showCategory('movies')">Movies</a>
+        </li>
+        <li ng-class="vm.currentTopFiveAttr === 'songs' ? 'is-active' : ''">
+          <a ng-click="vm.showCategory('songs')">Songs</a>
+        </li>
+         <li ng-class="vm.currentTopFiveAttr === 'games' ? 'is-active' : ''">
+          <a ng-click="vm.showCategory('games')">Video Games</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="current-top-five">
+      <li class="label-container">
+        <span>{{ vm.currentPopularAttr.toUpperCase() }}</span>
+      </li>
+
+      <li class="top-five-list-item" ng-repeat="categoryItem in vm.currentTopFive track by $index">
+          <span class="rank">{{ $index + 1 }}.</span>
+          <span class="top-five-item">{{ categoryItem }}<span>
+      </li>
+    </ul>
+  </div>
+</div>

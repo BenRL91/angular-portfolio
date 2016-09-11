@@ -1,10 +1,18 @@
 .top-five-container {
+    min-height: 100vh;
+    h1 {
+    font-size: 4em;
+    padding: 25px;
+    font-weight: bolder;
+    }
     @include FLEXED(column, center, center)
     .tabs {
         font-size: 3.5vmin;
     }
     .current-top-five{
-        @include FLEXED(column, center, flex-start);
+        // @include FLEXED(column, center, center);
+        width: 50%;
+        margin: 0px auto;
         font-size: 4vmin;
     }
 }

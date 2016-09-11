@@ -1,5 +1,11 @@
 .about-container {
-  section.info {
+  min-height: 100vh;
+    h1 {
+    font-size: 4em;
+    padding: 25px;
+    font-weight: bolder;
+    background-color: lighten(#F9E600, 18%);
+    }
     background-color: lighten(#F9E600, 18%);
     .card {
       width: 100%;
@@ -13,5 +19,4 @@
         width: 600px;
       }
     }
-  }
 }

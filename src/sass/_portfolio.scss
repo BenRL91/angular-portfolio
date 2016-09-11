@@ -1,11 +1,14 @@
 .portfolio-container {
+  min-height: 100vh;
   h1 {
     font-size: 4em;
     padding: 25px;
     font-weight: bolder;
+    margin: 0px;
   }
   .hero-body {
     background-color: $green;
+    padding: 15px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
